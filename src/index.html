@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+  <title>Menada Winery</title>
+</head>
+<body>
+  @@include('./components/_svg-sprites.html')
+  <div class="modal__menu" data-menu>
+    <div class="menu__close" data-close-menu>
+      <div class="wrapper__circles">
+        <span class="menu__circle"></span>
+        <span class="menu__circle"></span>
+        <span class="menu__circle"></span>
+        <span class="menu__circle"></span>
+        <span class="menu__circle"></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="menu__body">
+        <div class="menu__title">Products - Wine & Spirits</div>
+        <div class="menu__column">
+          <div class="menu__content-wrapper">
+            <div class="menu__content-list">
+              <div class="menu__content-column home-column-height">
+                <div class="menu__logo">
+                  <img class="logo" src="./img/header/logo.png" alt="logo">
+                </div>
+                <img class="menu-bg" src="./img/menu/home-bg.jpg" alt="home">
+                <h5 class="menu__content-title">HOME</h5>
+              </div>
+              <div class="menu__content-column">
+                <img class="menu-bg" src="./img/menu/about-bg.jpg" alt="about">
+                <h5 class="menu__content-title">About <br/> <span>US</span></h5>
+              </div>
+              <div class="menu__content-column history-column-height">
+                <img class="menu-bg" src="./img/menu/history-bg.jpg" alt="history">
+                <h5 class="menu__content-title color-white">History</h5>
+              </div>
+            </div>
+            <div class="menu__content-column menu__title">
+              <div class="menu__title-text">Products</div>
+              <div class="menu__title-wine"><span>Wine</span> <span>&</span> Spirits</div>
+            </div>
+          </div>
+          <div class="menu__content-column region-column-height">
+            <img class="menu-bg" src="./img/menu/region.jpg" alt="region-wine">
+            <h5 class="menu__content-title">Region & <br/> <span>Wine</span></h5>
+          </div>
+        </div>
+        <div class="menu__column flex-wrap">
+          <div class="menu__content-column menu__product">
+            <div class="wrapper__menu-logo">
+              <img class="menu__logo-item" src="./img/menu/tcherga-logo.svg" alt="brand-logo">
+            </div>
+            <div class="wrapper__menu-bottles">
+              <img class="menu__bottles-img" src="./img/menu/tcherga-bottles.png" alt="bottles">
+            </div>
+          </div>
+          <div class="menu__content-column menu__product">
+            <div class="wrapper__menu-logo">
+              <img class="menu__logo-item" src="./img/menu/inovino-logo.svg" alt="brand-logo">
+            </div>
+            <div class="wrapper__menu-bottles">
+              <img class="menu__bottles-img" src="./img/menu/inovino-bottles.png" alt="bottles">
+            </div>
+          </div>
+          <div class="menu__content-column menu__product">
+            <div class="wrapper__menu-logo">
+              <img class="menu__logo-item" src="./img/menu/menada.svg" alt="brand-logo">
+            </div>
+            <div class="wrapper__menu-bottles">
+              <img class="menu__bottles-img" src="./img/menu/menada-bottles.png" alt="bottles">
+            </div>
+          </div>
+          <div class="menu__content-column menu__product">
+            <div class="wrapper__menu-logo">
+              <img class="menu__logo-item" src="./img/menu/artist.svg" alt="brand-logo">
+            </div>
+            <div class="wrapper__menu-bottles">
+              <img class="menu__bottles-img" src="./img/menu/artist-bottles.png" alt="bottles">
+            </div>
+          </div>
+          <div class="menu__content-column menu__product bg-light-grey">
+            <div class="wrapper__menu-logo">
+              <img class="menu__logo-item" src="./img/menu/zarska-logo.png" alt="brand-logo">
+            </div>
+            <div class="wrapper__menu-bottles">
+              <img class="menu__bottles-img" src="./img/menu/zarska-bottles.png" alt="bottles">
+            </div>
+          </div>
+          <div class="menu__content-column menu__product bg-dark-grey">
+            <div class="wrapper__menu-logo">
+              <img class="menu__logo-item" src="./img/menu/tcherga-muscat-logo.png" alt="brand-logo">
+              <img class="menu__logo-item" src="./img/menu/dqdova-logo.svg" alt="brand-logo">
+            </div>
+            <div class="wrapper__menu-bottles">
+              <img class="menu__bottles-img" src="./img/menu/rakia.png" alt="bottles">
+            </div>
+          </div>
+          <div class="menu__content-column menu__products-all">
+            <div class="menu__products-title">Other <br/> <span>Products</span></div>
+            <a class="button-dark-bg" href="#">Discover all our products</a>
+            <img class="menu-bg" src="./img/menu/products-bg.jpg" alt="all-products">
+          </div>
+        </div>
+        <div class="menu__column">
+          <div class="menu__content-column menu__section">
+            <img class="menu-bg" src="./img/menu/life-style-bg.jpg" alt="wine-lifestyle">
+            <div class="menu___item-title">Wine <br/><span>&Lifestyle</span></div>
+          </div>
+          <div class="menu__content-column menu__section">
+            <img class="menu-bg" src="./img/menu/recipes-bg.jpg" alt="wine-lifestyle">
+            <div class="menu___item-title"><span>Our</span><br/>Recipes</div>
+            <a class="button-dark-bg" href="#">Read more</a>
+          </div>
+          <div class="menu__content-column menu__contact">
+            <a class="contact__link" href="tel:35924899450">
+              <svg class="contact__icon contact__phone">
+                <use xlink:href="#phone"></use>
+              </svg>
+              +359<span>24899450</span>
+            </a>
+            <a class="button-dark-bg" href="#">Go to contact page</a>
+          </div>
+          <div class="menu__content-column menu__news">
+            <div class="menu__news-title">NEWS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('./components/_header.html')
+  <div class="lines__decor">
+    <div class="line__item"></div>
+    <div class="line__item"></div>
+    <div class="line__item"></div>
+    <div class="line__item"></div>
+    <div class="line__item"></div>
+  </div>
+  <main class="main">
+    <section class="intro" data-anim-items data-anim-no-hide="no-hide">
+      <a class="w3-link" href="#">
+        <img class="w3-mark" src="./img/intro/w3-mark.png" alt="w3-mark">
+      </a>
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__body">
+            <div class="intro__column">
+              <h1 class="intro__title">
+                <span data-typed-text="Wines" data-typed-speed="50"></span> <br />
+                <span data-typed-text="inspired by" data-typed-speed="50" data-typed-delay="500"></span>
+                <span data-typed-text="you!" data-typed-speed="10" data-typed-delay="1300"></span>
+              </h1>
+              <div class="intro__text">
+                <p data-typed-text="Welcome to Menada - one of Bulgaria's oldest wineries" data-typed-speed="1"></p>
+                <p class="color-page-orange" data-typed-text="We strive to produce high quality wine combining 100-year-old traiditions with an innovarive approach" data-typed-speed="1"></p>
+              </div>
+              <a class="button-main" href="#">
+                <span class="button__line"></span>
+                <span class="button__text" data-typed-text="Have a look at our product portfolio" data-typed-speed="30"></span>
+              </a>
+            </div>
+            <div class="intro__column">
+              <h4 class="column__title" data-typed-text="The new face of Menada" data-typed-speed="30"></h4>
+              <div class="row__wines">
+                <div class="wine__bottle" data-wine-tab="Medana - Sauvignon Blane">
+                  <img class="bottle__img" src="./img/new-wines/1.png" alt="wine-bottle" >
+                </div>
+                <div class="wine__bottle" data-wine-tab="Menada - Traminer">
+                  <img class="bottle__img" src="./img/new-wines/2.png" alt="wine-bottle" >
+                </div>
+                <div class="wine__bottle" data-wine-tab="Menada - Chardonnay">
+                  <img class="bottle__img" src="./img/new-wines/3.png" alt="wine-bottle" >
+                </div>
+                <div class="wine__bottle" data-wine-tab="Medana - Muscat">
+                  <img class="bottle__img" src="./img/new-wines/4.png" alt="wine-bottle" >
+                </div>
+                <div class="wine__bottle" data-wine-tab="Menada - Rose">
+                  <img class="bottle__img" src="./img/new-wines/5.png" alt="wine-bottle" >
+                </div>
+                <div class="wine__bottle" data-wine-tab="Menada - Cabernet Sauvignon">
+                  <img class="bottle__img" src="./img/new-wines/6.png" alt="wine-bottle" >
+                </div>
+                <div class="wine__bottle" data-wine-tab="Menada - Merlot">
+                  <img class="bottle__img" src="./img/new-wines/7.png" alt="wine-bottle" >
+                </div>
+                <div class="wine__bottle" data-wine-tab="Menada - Mavrud">
+                  <img class="bottle__img" src="./img/new-wines/8.png" alt="wine-bottle" >
+                </div>
+              </div>
+              <div class="wines__tabs">
+                <div class="wine__tab-item active" data-wine-item="defaultTab">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine" data-typed-text="A revolution in desing. Tradition in quality." data-typed-speed="70"></h5>
+                    <div class="wine__description">
+                      <p data-typed-text="To be even closer to the people of today, the beloved to generation of Bulgarians MENADA, has stepped outside its boundaries to reappear in a whole new vision - bold, modern, distinguishable." data-typed-speed="10"></p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+                <div class="wine__tab-item" data-wine-item="Medana - Sauvignon Blane">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine">Medana - Sauvignon Blane</h5>
+                    <div class="wine__description">
+                      <p>Our Sauvignon Blanc wine is with great light yellow color and fruity taste. It's delightful for the senses with its long and soft aftertaste. The aroma is pleasant and balanced.</p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+                <div class="wine__tab-item"  data-wine-item="Menada - Traminer">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine">Menada - Traminer</h5>
+                    <div class="wine__description">
+                      <p>The wine from Traminer has crystal beautiful light color of straw. The aroma is strong of roses and ripe fruits. The taste is balanced, with pronounced softness and freshness.</p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+                <div class="wine__tab-item" data-wine-item="Menada - Chardonnay">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine">Menada - Chardonnay</h5>
+                    <div class="wine__description">
+                      <p>Our Chardonnay delights with its straw-like yellow color and soft green hues. The aroma is fine and fresh, with light pleasant accents. The taste has pronounced elegant freshness and finesse.</p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+                <div class="wine__tab-item" data-wine-item="Medana - Muscat">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine">Medana - Muscat</h5>
+                    <div class="wine__description">
+                      <p>The wine from Muscat is with bright yellow greenish color and discrete fresh and balanced taste.</p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+                <div class="wine__tab-item" data-wine-item="Menada - Rose">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine">Menada - Rose</h5>
+                    <div class="wine__description">
+                      <p>Our Rose charms with its vivid rose color. Its aroma is rich of ripe forest fruits, cherry and spicy herbs. The taste has pleasant freshness and long finish.</p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+                <div class="wine__tab-item" data-wine-item="Menada - Cabernet Sauvignon">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine">Menada - Cabernet Sauvignon</h5>
+                    <div class="wine__description">
+                      <p>Cabernet Sauvignon is with dark ruby red color. The aroma is fruity with sweet accents of violets and raspberry jam, vanilla and spices. The taste is fresh with fuller body and lasting aftertaste.</p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+                <div class="wine__tab-item" data-wine-item="Menada - Merlot">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine">Menada - Merlot</h5>
+                    <div class="wine__description">
+                      <p>MENADA Merlot grabs the attention with its intense red color and balanced taste, with soft and velvety tannins. The taste is rich and manifold of raspberries, cherries, plums, chocolate, bayleaf and vanilla.</p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+                <div class="wine__tab-item" data-wine-item="Menada - Mavrud">
+                  <div class="wine__tab-content">
+                    <h5 class="title__wine">Menada - Mavrud</h5>
+                    <div class="wine__description">
+                      <p>Mavrud is a variety that is a national heritage and pride. The wine is with intense ruby red color, rich and dense balanced taste, velvety tannins. The aroma is specific and pleasant of blackberries, ripe mulberries, plums and chocolate.</p>
+                    </div>
+                  </div>
+                  <a class="button-main" href="#">
+                    <span class="button__line"></span>
+                    <span class="button__text">Learn more</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__grape">
+          <img class="grape__img" src="./img/intro/grape.png" alt="grape">
+        </div>
+      </div>
+      <div class="intro__inscription">Menada Winery</div>
+    </section>
+
+    <section class="production" data-anim-items data-anim-no-hide="no-hide">
+      <div class="container">
+        <div class="production__inner">
+          <div class="decor__grape">
+            <img class="grape-single" src="./img/production/grape-one.png" alt="grape">
+          </div>
+          <div class="production__body">
+            <div class="production__column">
+              <div class="production__content">
+                <h5 class="production__number">80<span>%</span></h5>
+                <div class="production__text">
+                  <p data-typed-text="estate grown grapes used in wine making process" data-typed-speed="30"></p>
+                </div>
+                <a class="button-main" href="#">
+                  <span class="button__line"></span>
+                  <span class="button__text">Read more</span>
+                </a>
+              </div>
+              <div class="production__video">
+                <video loop muted autoplay class="production-mp4">
+                  <source src="img/production/production-video.mp4">
+                </video>
+                <div class="video__text">
+                  <p data-typed-text="The grape varieties are carefully selected depending on the characteristics of the region." data-typed-speed="30"></p>
+                </div>
+              </div>
+            </div>
+            <div class="production__results">
+              <div class="results__list">
+                <div class="result__item">
+                  <div class="result__number">20</div>
+                  <div class="result__description" data-typed-text="million bottles" data-typed-speed="100"></div>
+                </div>
+                <div class="result__item">
+                  <div class="result__number">
+                    <img class="result__img" src="./img/production/bottles.svg" alt="bottles">
+                  </div>
+                  <div class="result__description" data-typed-text="per year" data-typed-speed="150"></div>
+                </div>
+              </div>
+              <a href="#" class="button-dark-bg">Read more</a>
+            </div>
+          </div>
+          <div class="production__inscription">
+            <div class="production__tons">
+              <span data-typed-text="8000" data-typed-speed="70"></span>
+              <span data-typed-text="tons" data-typed-speed="70" data-typed-delay="130"></span></div>
+            <div class="inscription__text">of wine produced per year</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" data-anim-items data-anim-no-hide="no-hide">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__row">
+            <div class="about__column">
+              <h5 class="about__title" data-typed-text="About Menada" data-typed-speed="70" data-typed-delay="400"></h5>
+              <div class="about__text">
+                <p data-typed-text="Domain Menada, established in 1901, is located in the central part of Southern Bulgaria in a region known as the Thracian Valley. The winery owns over 426 ha of vineyards and is one of the leading producers of high quality wines and spirits in the country." data-typed-speed="1" data-typed-delay="400"></p>
+              </div>
+              <a class="button-main" href="#">
+                <span class="button__line"></span>
+                <span class="button__text">Learn more</span>
+              </a>
+            </div>
+            <div class="about__column">
+              <h5 class="about__title" data-typed-text="History" data-typed-speed="70" data-typed-delay="400"></h5>
+              <div class="about__text">
+                <p data-typed-text="Domain Menada winery has been producing quality wines for over a century. The cellar was founded in 1901 under the name Loza Cooperative. In 2002, Domain Menada became part of the French holding company Belvedere Group (renamed Marie Brizard Wine & Spirits Bulgaria in in July 2015)." data-typed-speed="1" data-typed-delay="400"></p>
+              </div>
+              <a class="button-main" href="#">
+                <span class="button__line"></span>
+                <span class="button__text">Learn more</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" data-anim-items data-anim-no-hide="no-hide">
+      <div class="container">
+        <div class="products__inner">
+          <div class="products__header">
+            <h5 class="products__title">Products <span>our</span></h5>
+            <a href="#" class="button-dark-bg">View all products</a>
+          </div>
+          <div class="products__row">
+            <div class="wrapper__colums">
+              <div class="product__column">
+                <img class="product__column-bg" src="./img/products/product-1-bg.jpg" alt="product" >
+                <div class="product__body">
+                  <div class="product__brand">
+                    <img class="brand__img" src="./img/products/product-1-brand.jpg" alt="brand" >
+                    <div class="brand__title">Inovino</div>
+                  </div>
+                  <div class="product__wrapper-img">
+                    <img class="product__img" src="./img/products/product-1.png" alt="product" >
+                  </div>
+                  <div class="product__info">
+                    <div class="product__text">
+                      <p>InoVino is unforgettable.It’s an irreplaceable part of our personal ritual, the good ending of every day – a glass of nice wine to celebrate both the small and the grand victories.</p>
+                    </div>
+                    <a class="button-dark-bg" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="all__products">
+                <img class="product__column-bg" src="./img/products/all-products.jpg" alt="products">
+                <div class="products__wrapper-btn">
+                  <a class="products__btn-all" href="#">Discover all our <br/> <span>products</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper__colums">
+              <div class="product__column column-dark">
+                <img class="product__column-bg" src="./img/products/product-2-bg.jpg" alt="product" >
+                <div class="product__body">
+                  <div class="product__info">
+                    <div class="product__brand">
+                      <img class="brand__img" src="./img/products/product-2-brand.svg" alt="brand" >
+                      <div class="brand__title">Teherga</div>
+                    </div>
+                    <div class="product__text">
+                      <p>Tcherga04 is the wine of the contemporary urban people – then, now and forever – it’s the spirit of Bulgaria in a glass of wine. A glass of wine that holds a unique blend of varieties showcasing the colourful diversity of the Bulgarian soul.</p>
+                    </div>
+                    <a class="button-dark-bg" href="#">Read more</a>
+                  </div>
+                  <div class="product__wrapper-img">
+                    <img class="product__img" src="./img/products/product-2.png" alt="product" >
+                  </div>
+                </div>
+              </div>
+              <div class="product__column column-dark">
+                <img class="product__column-bg" src="./img/products/product-2-bg.png" alt="product" >
+                <div class="product__body">
+                  <div class="product__info">
+                    <div class="product__brand">
+                      <img class="brand__img" src="./img/products/product-3-brand.svg" alt="brand" >
+                      <div class="brand__title">Menada</div>
+                    </div>
+                    <div class="product__text">
+                      <p>Contemporary, yet always comprising in itself the good taste and quality that it is long known for, MENADA is an heir of ancient traditions. Transformed, with a brand new look, MENADA lives by the saw that what is important is hidden from the eyes - in our case, inside the bottle.</p>
+                    </div>
+                    <a class="button-dark-bg" href="#">Read more</a>
+                  </div>
+                  <div class="product__wrapper-img">
+                    <img class="product__img" src="./img/products/product-3.png" alt="product" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="region" data-anim-items data-anim-no-hide="no-hide">
+      <div class="container">
+        <div class="region__inner">
+          <div class="region__body">
+            <div class="region__column">
+              <img class="region__column-bg" src="./img/region/leaf.jpg" alt="bg-leaf" >
+              <div class="region__title">
+                About the<br/> <span>region</span>
+              </div>
+              <div class="region__content">
+                <div class="region__text">
+                  <p data-typed-text="The climate and diversity of soils in the Stara Zagora region present great opportunities for viticulture and winemaking." data-typed-speed="1"></p>
+                  <p data-typed-text="Our winery benefits from fantastic geography and weather conditions that allow us to grow both exotic international grapes as well as local traditional grape varieties." data-typed-speed="1"></p>
+                </div>
+                <a class="button-main" href="#">
+                  <span class="button__line"></span>
+                  <span class="button__text">Learn more</span>
+                </a>
+              </div>
+            </div>
+            <img class="region__map" src="./img/region/bulgaria-map.png" alt="map">
+            <div class="grape__varietals">
+              <div class="varietals__body">
+                <h4 class="varietals__title">
+                  Grape varietals:
+                </h4>
+                <ul class="varietals__list">
+                  <li class="varietals__item">Cabernet Sauvignon</li>
+                  <li class="varietals__item">Merlot</li>
+                  <li class="varietals__item">Rubin</li>
+                  <li class="varietals__item">Mavrud</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper__banner">
+            <div class="menada__banner">
+              <img class="banner__img" src="./img/region/medana-bg.png" alt="menada-wine" >
+              <img class="glass__img" src="./img/region/glass.png" alt="glass-wine" >
+              <div class="banner__text">
+                Quality <span>wines</span> <span>from the</span><br /> Thracian Valley
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipes" data-anim-items data-anim-no-hide="no-hide">
+      <div class="container">
+        <div class="recipes__inner">
+          <div class="recipes__body">
+            <img class="wine__hands-img" src="./img/recipes/wine-hands.png" alt="wine" >
+            <div class="recipes__content">
+              <h4 class="recipes__title">
+                <span>Wine</span> & Lifestyle
+              </h4>
+              <div class="recipes__text">
+                <p data-typed-text="Since ancient times, wine has been perceived as part of our culture and a symbol of good life. The role of wine has evolved over the centuries, making the beverage a complement to food, festivities, and a healthy lifestyle." data-typed-speed="1"></p>
+                <p data-typed-text="The art of viticulture and winemaking has evolved. Nonetheless, during all those centuries, one important aspect remains unchanged: the connection of wine to gastronomy, to local traditions and to social celebrations." data-typed-speed="1"></p>
+              </div>
+              <a class="button-main" href="#">
+                <span class="button__line"></span>
+                <span class="button__text">Learn more</span>
+              </a>
+            </div>
+          </div>
+          <div class="recipes__row">
+            <div class="recipe__column-special">
+              <h4 class="recipe__title">Our recipes</h4>
+              <a class="button-dark-bg" href="#">Read more</a>
+            </div>
+            <div class="recipe__column">
+              <img class="recipe__img" src="./img/recipes/recipe-1.jpg" alt="recipe">
+              <h4 class="recipe__title">Cucumber Cocktail</h4>
+            </div>
+            <div class="recipe__column">
+              <img class="recipe__img" src="./img/recipes/recipe-2.jpg" alt="recipe">
+              <h4 class="recipe__title">Sangria with Watermelon and Raspberry</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('./components/_footer.html')
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script src="js/index.min.js"></script>
+</body>
+</html>

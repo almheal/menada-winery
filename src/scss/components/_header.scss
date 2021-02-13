@@ -1,0 +1,145 @@
+.header{
+  position: relative;
+  z-index: 20;
+  display: flex;
+}
+
+.header__tag{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 78px;
+}
+
+.tag__link{
+  display: inline-block;
+  width: 78px;
+}
+
+.header__tag-img{
+  width: 100%;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px 32px;
+}
+
+.logo{
+  display: block;
+  margin-right: 15px;
+}
+
+.logo__img{
+  width: 150px;
+  max-width: 100%;
+}
+
+.header__menu{
+  display: flex;
+  align-items: center;
+}
+
+.btn__language{
+  display: inline-block;
+  font-size: 13px;
+  padding: 8px 7px;
+  border-radius: 50%;
+  background-color: #575757;
+  color: #fff;
+  margin-right: 15px;
+  transition: .3s;
+  &:hover{
+    background-color: $light-orange;
+    color: #000;
+    transition: .3s;
+  }
+}
+
+.wrapper__burger{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover .menu__icon-dot:first-child{
+    opacity: 0;
+    transition: .3s;
+  }
+  &:hover .menu__icon-dot:nth-child(3){
+    opacity: 0;
+    transition: .3s;
+  }
+  &:hover .menu__icon-dot:nth-child(4){
+    transform: translate(-50%,-50%);
+  }
+  &:hover .menu__icon-dot:nth-child(5){
+    left: initial;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  &:hover .menu__icon-dot:nth-child(7){
+    opacity: 1;
+  }
+}
+
+.menu__name{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 15px;
+}
+
+.menu__icon{
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.menu__icon-dot{
+  position: absolute;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $light-orange;
+  &:first-child{
+    left: 0;
+    top: 0;
+    transition: .3s;
+  }
+  &:nth-child(2){
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  &:nth-child(3){
+    right: 0;
+    top: 0;
+    transition: .3s;
+  }
+  &:nth-child(4){
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 3px),-50%);
+  }
+  &:nth-child(5){
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 3px),-50%);
+  }
+  &:nth-child(6){
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:nth-child(7){
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+}
